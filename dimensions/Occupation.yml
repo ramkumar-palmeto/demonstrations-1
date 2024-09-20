@@ -1,0 +1,18 @@
+unique_name: Occupation
+object_type: dimension
+label: Occupation
+hierarchies:
+  - unique_name: Occupation_Hierarchy
+    label: Occupation Hierarchy
+    levels:
+      - unique_name: Occupation_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Occupation_Level
+    label: Occupation Level
+    contains_unique_names: false
+    dataset: Tutorial Dataset
+    key_columns:
+      - occupation
+    name_column: occupation
+type: standard

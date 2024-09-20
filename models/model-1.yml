@@ -1,0 +1,46 @@
+unique_name: model-1
+object_type: model
+label: model-1
+dimensions:
+  - Customer_Key
+  - Geography_Key
+  - First_Name
+  - Last_Name
+  - Gender
+  - Date_First_Purchase
+  - Occupation
+  - Full_Name
+  - English_Country_Region_Name
+  - Postal_Code
+  - State_Province_Name
+  - City
+metrics: []
+relationships:
+  - unique_name: New_Dataset_empty_dimension
+    from:
+      dataset: dataset-1
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: customers_empty_dimension
+    from:
+      dataset: customers
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: New_Dataset_empty_dimension
+    from:
+      dataset: geography
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: empty_dataset_New_Dimension_(1)
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      dimension: dimension-1
+      level: ''

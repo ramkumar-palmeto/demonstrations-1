@@ -1,0 +1,18 @@
+unique_name: City
+object_type: dimension
+label: City
+hierarchies:
+  - unique_name: City_Hierarchy
+    label: City Hierarchy
+    levels:
+      - unique_name: City_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: City_Level
+    label: City Level
+    contains_unique_names: false
+    dataset: Geography Dataset
+    key_columns:
+      - city
+    name_column: city
+type: standard

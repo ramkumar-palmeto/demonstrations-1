@@ -1,0 +1,6 @@
+unique_name: Demonstrations 1
+object_type: catalog
+label: Demonstrations 1
+aggressive_agg_promotion: false
+as_version: 1
+build_speculative_aggs: true
