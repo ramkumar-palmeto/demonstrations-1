@@ -1,0 +1,12 @@
+unique_name: customersview
+object_type: dataset
+label: customersview
+columns:
+  - name: customerid
+    data_type: bpchar
+  - name: customername
+    data_type: string
+  - name: customercountry
+    data_type: string
+connection_id: con_Northwind_public
+table: customersview

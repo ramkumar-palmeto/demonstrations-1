@@ -1,0 +1,6 @@
+unique_name: con_Northwind_public
+object_type: connection
+label: con_Northwind_public
+as_connection: TrainingDB
+database: Northwind
+schema: public

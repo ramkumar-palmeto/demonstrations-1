@@ -1,0 +1,18 @@
+unique_name: productsview
+object_type: dataset
+label: productsview
+columns:
+  - name: productid
+    data_type: int2
+  - name: productpategory
+    data_type: string
+  - name: productpame
+    data_type: string
+  - name: productprice
+    data_type: float
+  - name: suppliername
+    data_type: string
+  - name: suppliercountry
+    data_type: string
+connection_id: con_Northwind_public
+table: productsview

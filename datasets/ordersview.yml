@@ -1,0 +1,32 @@
+unique_name: ordersview
+object_type: dataset
+label: ordersview
+columns:
+  - name: rownumber
+    data_type: int
+  - name: orderid
+    data_type: int2
+  - name: customerid
+    data_type: bpchar
+  - name: employeeid
+    data_type: int2
+  - name: orderdate
+    data_type: date
+  - name: shippeddate
+    data_type: date
+  - name: shippername
+    data_type: string
+  - name: shippedcountry
+    data_type: string
+  - name: orderamount
+    data_type: numeric
+  - name: orderquantity
+    data_type: int2
+  - name: orderdiscountpercentage
+    data_type: float
+  - name: orderdiscount
+    data_type: numeric
+  - name: productid
+    data_type: int2
+connection_id: con_Northwind_public
+table: ordersview

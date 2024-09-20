@@ -1,0 +1,48 @@
+unique_name: employees
+object_type: dimension
+label: employees
+hierarchies:
+  - unique_name: employees Hierarchy
+    label: employees Hierarchy
+    levels:
+      - unique_name: Employee Country
+      - unique_name: Employee City
+      - unique_name: Employee Name
+  - unique_name: Employee
+    label: Employee
+    levels:
+      - unique_name: Employee ID
+level_attributes:
+  - unique_name: Employee Country
+    label: Employee Country
+    contains_unique_names: false
+    dataset: employeesview
+    is_unique_key: false
+    key_columns:
+      - employeecountry
+    name_column: employeecountry
+  - unique_name: Employee City
+    label: Employee City
+    contains_unique_names: false
+    dataset: employeesview
+    is_unique_key: false
+    key_columns:
+      - employeecity
+    name_column: employeecity
+  - unique_name: Employee Name
+    label: Employee Name
+    contains_unique_names: false
+    dataset: employeesview
+    is_unique_key: false
+    key_columns:
+      - employeename
+    name_column: employeename
+  - unique_name: Employee ID
+    label: Employee ID
+    contains_unique_names: false
+    dataset: employeesview
+    is_unique_key: false
+    key_columns:
+      - employeeid
+    name_column: employeeid
+type: standard

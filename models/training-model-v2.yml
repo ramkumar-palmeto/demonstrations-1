@@ -1,0 +1,53 @@
+unique_name: training-model-v2
+object_type: model
+label: training-model-v2
+metrics: []
+relationships:
+  - unique_name: ordersview_productid_to_products_products Level (2)
+    from:
+      dataset: ordersview
+      join_columns:
+        - productid
+    to:
+      dimension: products
+      level: products Level (2)
+  - unique_name: ordersview_employeeid_to_employees_employees Level (1)
+    from:
+      dataset: ordersview
+      join_columns:
+        - employeeid
+    to:
+      dimension: employees
+      level: employees Level (1)
+  - unique_name: ordersview_customerid_to_customers_customers Level (1)
+    from:
+      dataset: ordersview
+      join_columns:
+        - customerid
+    to:
+      dimension: customers
+      level: customers Level (1)
+  - unique_name: ordersview_customerid_to_customers_Customer ID
+    from:
+      dataset: ordersview
+      join_columns:
+        - customerid
+    to:
+      dimension: customers
+      level: Customer ID
+  - unique_name: ordersview_employeeid_to_employees_Employee ID
+    from:
+      dataset: ordersview
+      join_columns:
+        - employeeid
+    to:
+      dimension: employees
+      level: Employee ID
+  - unique_name: ordersview_productid_to_products_Product ID
+    from:
+      dataset: ordersview
+      join_columns:
+        - productid
+    to:
+      dimension: products
+      level: Product ID

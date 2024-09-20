@@ -1,0 +1,14 @@
+unique_name: employeesview
+object_type: dataset
+label: employeesview
+columns:
+  - name: employeeid
+    data_type: int2
+  - name: employeename
+    data_type: string
+  - name: employeecity
+    data_type: string
+  - name: employeecountry
+    data_type: string
+connection_id: con_Northwind_public
+table: employeesview

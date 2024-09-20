@@ -1,0 +1,39 @@
+unique_name: customers
+object_type: dimension
+label: customers
+hierarchies:
+  - unique_name: Customers
+    label: Customers
+    levels:
+      - unique_name: Customer Country
+      - unique_name: Customer Name
+  - unique_name: Customer
+    label: Customer
+    levels:
+      - unique_name: Customer ID
+level_attributes:
+  - unique_name: Customer Country
+    label: Customer Country
+    contains_unique_names: false
+    dataset: customersview
+    is_unique_key: false
+    key_columns:
+      - customercountry
+    name_column: customercountry
+  - unique_name: Customer Name
+    label: Customer Name
+    contains_unique_names: false
+    dataset: customersview
+    is_unique_key: false
+    key_columns:
+      - customername
+    name_column: customername
+  - unique_name: Customer ID
+    label: Customer ID
+    contains_unique_names: false
+    dataset: customersview
+    is_unique_key: false
+    key_columns:
+      - customerid
+    name_column: customerid
+type: standard

@@ -1,0 +1,60 @@
+unique_name: products
+object_type: dimension
+label: products
+hierarchies:
+  - unique_name: Product Line
+    label: Product Line
+    levels:
+      - unique_name: Category
+      - unique_name: Product
+  - unique_name: Supplier Line
+    label: Supplier Line
+    levels:
+      - unique_name: Supplier Country
+      - unique_name: Supplier Name
+  - unique_name: Product
+    label: Product
+    levels:
+      - unique_name: Product ID
+level_attributes:
+  - unique_name: Category
+    label: Category
+    contains_unique_names: false
+    dataset: productsview
+    is_unique_key: false
+    key_columns:
+      - productpategory
+    name_column: productpategory
+  - unique_name: Product
+    label: Product
+    contains_unique_names: false
+    dataset: productsview
+    is_unique_key: false
+    key_columns:
+      - productpame
+    name_column: productpame
+  - unique_name: Supplier Country
+    label: Supplier Country
+    contains_unique_names: false
+    dataset: productsview
+    is_unique_key: false
+    key_columns:
+      - suppliercountry
+    name_column: suppliercountry
+  - unique_name: Supplier Name
+    label: Supplier Name
+    contains_unique_names: false
+    dataset: productsview
+    is_unique_key: false
+    key_columns:
+      - suppliername
+    name_column: suppliername
+  - unique_name: Product ID
+    label: Product ID
+    contains_unique_names: false
+    dataset: productsview
+    is_unique_key: false
+    key_columns:
+      - productid
+    name_column: productid
+type: standard
